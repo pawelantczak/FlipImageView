@@ -97,12 +97,15 @@ public class SampleActivity extends Activity implements FlipImageView.OnFlipList
     }
 
     @Override
-    public void onFlipStart() {
+    public void onClick(FlipImageView view) {}
+    
+    @Override
+    public void onFlipStart(FlipImageView view) {
         mTextViewAnimationListener.setText("OnFlipStart");
     }
 
     @Override
-    public void onFlipEnd() {
+    public void onFlipEnd(FlipImageView view) {
         mTextViewAnimationListener.setText("OnFlipEnd");
     }
 
